@@ -1,0 +1,105 @@
+.projects_show {
+    width: 100%;
+    background: var(--about_bg);
+    padding-bottom: 100px;
+}
+
+.projects_show_main {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects_show_right {
+    position: relative;
+    left: -20px;
+}
+
+.projects_show_right_title p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24.34px;
+    color: var(--nav_color);
+}
+
+.projects_show_right_subtitle p {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 79.02px;
+    color: var(--nav_color);
+    text-transform: uppercase;
+    border-left: 3px solid var(--nav_hover);
+    margin-left: -20px;
+    padding-left: 13px;
+}
+
+.products_show_info {
+    padding-top: 30px;
+}
+
+.products_show_info p {
+    font-size: 20px;
+    line-height: 33.4px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: var(--nav_color);
+}
+
+.products_show_btn button {
+    width: 210px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 33.4px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid var(--nav_hover);
+    color: var(--nav_color);
+    margin-top: 50px;
+}
+
+.projects_show_page_count {
+    display: flex;
+    gap: 4px;
+    margin-top: 100px;
+}
+
+.projects_show_left_bg {
+    max-width: 848.13px;
+    height: 560.19px;
+    position: relative;
+    left: 264px;
+}
+
+.projects_show_left_bg img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .projects_show_main {
+        flex-direction: column;
+    }
+
+    .projects_show{
+        padding: 0;
+        height: 1150px;
+    }
+
+    .projects_show_right_title p {
+        position: relative;
+        padding: 30px;
+    }
+
+    .projects_show_page_count,
+    .products_show_btn,
+    .products_show_info,
+    .projects_show_right_subtitle {
+        padding-left: 30px;
+    }
+
+    .projects_show_left_bg {
+        position: relative;
+        left: 0;
+    }
+}

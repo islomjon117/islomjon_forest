@@ -1,0 +1,95 @@
+.services_contact {
+    background-image: url('../../assets/services_bg/img2.png');
+    width: 100%;
+    padding-bottom: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services_contact_title2,
+.services_contact_title {
+    text-align: center;
+}
+
+.services_contact_title {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26.34px;
+    letter-spacing: 3%;
+    color: var(--nav_color);
+    padding-top: 100px;
+}
+
+.services_contact_title2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47.41px;
+    letter-spacing: 3%;
+    color: var(--nav_hover);
+}
+
+.services_contact_inputs input {
+    width: 440px;
+    height: 56px;
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    color: var(--nav_color);
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.services_name_input {
+    margin-left: -30px;
+}
+
+.services_tel {
+    margin-left: 200px;
+}
+
+.services_contact_inputs button {
+    width: 210px;
+    height: 56px;
+    margin-left: 50px;
+    background-color: transparent;
+    color: var(--nav_color);
+    border: 1px solid var(--nav_hover);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33.4px;
+    letter-spacing: 6%;
+}
+
+@media screen and (max-width: 768px) {
+    .services_contact_main {
+        flex-direction: column;
+    }
+
+    .services_contact_inputs input {
+        max-width: 330px;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .services_contact_inputs button {
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .services_contact_inputs input {
+        max-width: 330px;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .services_contact_inputs button {
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+}

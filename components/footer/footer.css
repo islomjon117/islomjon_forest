@@ -1,0 +1,144 @@
+.footer {
+    width: 100%;
+    background: var(--footer);
+}
+
+.footer_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 180.25px;
+
+}
+
+.footer_logo {
+    position: relative;
+    right: 115px;
+}
+
+.all_rights_reserved {
+    color: var(--nav_color);
+    position: relative;
+    left: 50px;
+}
+
+.footer_links {
+    position: relative;
+    left: 50px;
+}
+
+.footer_links a {
+    margin: 25px;
+    transition: .3s;
+}
+
+.footer_icons {
+    position: relative;
+    left: 187px;
+}
+
+.footer_icons a {
+    color: var(--nav_color);
+    font-size: 30px;
+    margin: 8px;
+    transition: .3s;
+}
+
+.up_arrow_icon {
+    color: var(--nav_color);
+    font-size: 26px;
+    border: 1px solid var(--nav_hover);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uslugi {
+    color: var(--nav_hover);
+}
+
+.nav_link:hover {
+    color: var(--nav_hover);
+    transition: .3s;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .footer_main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer_logo {
+        margin-top: 100px;
+        position: relative;
+    }
+
+    .all_rights_reserved {
+        position: relative;
+        top: -35px;
+        margin-left: 70px;
+    }
+
+    .footer_links a {
+        position: relative;
+        left: 0;
+        margin-left: -70px;
+        text-align: center;
+        display: block;
+    }
+
+    .up_arrow_icon {
+        margin-left: -295px;
+        margin-top: 20px;
+    }
+
+    .footer_icons {
+        margin-left: -185px;
+        margin-top: -45px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .footer_main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer_logo {
+        margin-top: 100px;
+        position: relative;
+        right: 133px;
+    }
+
+    .all_rights_reserved {
+        position: relative;
+        top: -35px;
+        margin-left: 70px;
+    }
+
+    .footer_links a {
+        position: relative;
+        left: 0;
+        margin-left: -70px;
+        text-align: center;
+        display: block;
+    }
+
+    .up_arrow_icon {
+        margin-left: -295px;
+        margin-top: 20px;
+    }
+
+    .footer_icons {
+        margin-left: -185px;
+        margin-top: -45px;
+        padding-bottom: 50px;
+    }
+}

@@ -1,0 +1,254 @@
+.nav_container {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+}
+
+.navbar_main {
+    transition: background-color 0.3s ease;
+}
+
+.navbar_main.scrolled {
+    width: 100%;
+    height: 100px;
+    background-color: var(--about_bg);
+    margin-top: 0px;
+}
+
+.navbar_main {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    z-index: 100;
+}
+
+.navbar_help_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo img {
+    width: 87px;
+    height: 41.89px;
+    padding-left: -50px;
+}
+
+.nav_links {
+    text-align: center;
+    margin-left: -550px;
+}
+
+.nav_links a {
+    width: 100%;
+    margin-left: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.52px;
+    transition: .3s;
+    letter-spacing: 1.5px;
+}
+
+.nav_link {
+    color: var(--nav_color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.52px;
+}
+
+.nav_active {
+    color: var(--nav_hover);
+}
+
+.nav_icons {
+    display: flex;
+    margin-top: 5px;
+    position: relative;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.nav_icons a {
+    color: var(--nav_color);
+    font-size: 26px;
+}
+
+.nav_links a:hover {
+    color: var(--nav_hover);
+    transition: .3s;
+}
+
+.navbar_main_menu_and_close {
+    display: none;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 190px;
+    top: 100px;
+}
+
+.header_carusel_count {
+    position: relative;
+    top: 45px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.carusel_count_left {
+    color: var(--nav_color);
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.carusel_count_right {
+    color: var(--nav_hover);
+    font-size: 38px;
+}
+
+.header_top_left_img {
+    position: relative;
+    left: 400px;
+}
+
+.instagram_icon,
+.youtube_icon,
+.telegram_icon,
+.facebook_icon {
+    transition: .3s;
+}
+
+.facebook_icon:hover {
+    color: var(--facebook);
+    transition: .3s;
+}
+
+.youtube_icon:hover {
+    color: var(--youtube);
+    transition: .3s;
+}
+
+.telegram_icon:hover {
+    color: var(--telegram);
+    transition: .3s;
+}
+
+.instagram_icon:hover {
+    color: var(--instagram);
+    transition: .3s;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar_help_div {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .nav_links {
+        position: absolute;
+        display: none;
+        width: 100%;
+        top: -50px;
+        right: 0;
+        background: var(--about_bg);
+        height: 100vh;
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 150px;
+        z-index: 1;
+    }
+
+    .nav_links a {
+        padding-top: 20px;
+    }
+
+    .nav_links {
+        margin-top: 50px;
+    }
+
+    .nav_icons {
+        position: absolute;
+        left: 130px;
+        top: -150px;
+        display: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 500px;
+        z-index: 20;
+    }
+
+    .nav_icons.active {
+        display: flex;
+        position: fixed;
+    }
+
+
+    .nav_links.active {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_icons.aactive {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        position: fixed;
+
+    }
+
+    .navbar_main_menu_and_close {
+        display: block;
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    .navbar_main_menu_and_close {
+        display: block;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navbar_main_icon {
+        font-size: 26px;
+        cursor: pointer;
+        color: var(--nav_color);
+    }
+
+    .navbar_main_close {
+        color: var(--nav_color);
+        position: relative;
+        top: -1px;
+    }
+
+    .header_top_left_img,
+    .play_video_icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .nav_container {
+        max-width: 1300px !important;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .nav_container {
+        padding: 20px;
+    }
+
+    .nav_links {
+        margin: 0;
+    }
+}

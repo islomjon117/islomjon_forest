@@ -1,0 +1,242 @@
+.descriptions {
+    background-image: url('../../assets/descriptions_bg/img2.png');
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.descriptions_main {
+    display: flex;
+    align-items: center;
+}
+
+.descriptions_right {
+    position: relative;
+    left: 60px;
+}
+
+.descriptions_left {
+    position: relative;
+    margin-left: 500px;
+}
+
+.description_title {
+    padding-top: 25px;
+    margin-left: -20px;
+}
+
+.description_title p {
+    font-weight: 600;
+    border-left: 3px solid;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    line-height: 47.41px;
+    color: var(--nav_hover);
+    padding-left: 30px;
+}
+
+.description_info_bottom p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22.23px;
+    letter-spacing: 1px;
+    color: var(--nav_color);
+    padding-left: 15px;
+}
+
+.description_info_top {
+    margin-top: 20px;
+    color: var(--nav_color);
+    padding-bottom: 80px;
+    width: 500px;
+}
+
+.description_info_top p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22.23px;
+    letter-spacing: 1px;
+    color: var(--nav_color);
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.online_support,
+.online_support_and_btn,
+.descriptions_stories,
+.description_term,
+.description_materials,
+.description_square,
+.descriptions_location {
+    display: flex;
+    align-items: center;
+    color: var(--nav_color);
+}
+
+.stories_title,
+.term_title,
+.materials_title,
+.square_title,
+.location_title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30.12px;
+    padding-top: 25px;
+}
+
+.stories_info,
+.term_info,
+.materials_info,
+.square_info,
+.descriptions_location_info {
+    margin-top: 25px;
+}
+
+.descriptions_location_info {
+    -left: 150px;
+}
+
+.square_info {
+    padding-left: 125px;
+}
+
+.materials_info {
+    padding-left: 115px;
+}
+
+.term_info {
+    padding-left: 165px;
+}
+
+.stories_info {
+    padding-left: 118px;
+}
+
+.online_support_info {
+    padding-left: 10px;
+    width: 270px;
+}
+
+.online_support_and_btn {
+    margin-top: 50px;
+}
+
+.online_support_icon {
+    font-size: 40px;
+    padding-left: 50px;
+}
+
+.calculate_btn {
+    width: 234.14px;
+    height: 40.52px;
+    background-color: transparent;
+    border: 1px solid var(--nav_hover);
+    color: var(--nav_color);
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .descriptions_main {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .description_info_bottom {
+        padding: 0;
+        margin: 0;
+        margin-left: -50px
+    }
+
+    .description_title p {
+        font-size: 20px;
+        position: relative;
+        left: -95px;
+        top: -30px;
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .description_info_bottom {
+        width: 100%;
+        margin-left: -100px;
+    }
+
+    .description_info_top {
+        width: 350px;
+        margin-left: -100px;
+    }
+
+    .description_info_bottom p {
+        font-size: 10px;
+        position: relative;
+        left: -30px;
+        top: -50px;
+    }
+
+    .description_info_top p {
+        font-size: 11px;
+        position: relative;
+        left: -30px;
+        top: -50px;
+
+    }
+
+    .stories_info,
+    .term_info,
+    .materials_info,
+    .square_info,
+    .descriptions_location_info {
+        padding: 0;
+        margin: 0;
+    }
+
+    .descriptions_left {
+        padding: 0;
+        margin: 0;
+    }
+
+    .descriptions_location {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        /* left: -30px; */
+        width: 100%;
+    }
+
+    .descriptions_location_info p {
+        margin-top: 25px;
+        margin-left: 60px;
+    }
+
+    .square_info p {
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+
+    .stories_info p,
+    .materials_info {
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    .term_info p {
+        margin-top: 25px;
+        margin-left: 70px;
+    }
+
+    .online_support_and_btn{
+        flex-direction: column;
+    }
+
+    .online_support{
+        margin-left: -40px;
+        margin-top: 20px;
+        padding-bottom: 50px;
+    }
+}

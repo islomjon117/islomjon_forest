@@ -1,0 +1,126 @@
+.projects_in {
+    background-image: url('../../assets/projects_bg/projects_bg.png');
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects_in_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects_in_all,
+.cool_designers,
+.years_experience {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.years_experience_num {
+    position: relative;
+    left: 70px;
+    font-size: 96px;
+    font-family: 700;
+    line-height: 102.43px;
+    color: var(--nav_hover);
+}
+
+.years_exprience_title p {
+    position: relative;
+    left: 100px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25.64px;
+    color: var(--nav_color);
+    width: 100px;
+    margin-top: 40px;
+}
+
+.cool_designers_title {
+    width: 250px;
+    position: relative;
+    left: 100px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25.64px;
+    color: var(--nav_color);
+    margin-top: 40px;
+}
+
+.projects_in_all_title {
+    width: 200px;
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25.64px;
+    color: var(--nav_color);
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .projects_in_main {
+        flex-direction: column;
+        align-self: center;
+        right: 50px;
+    }
+
+    .years_exprience_title p,
+    .cool_designers_title p,
+    .projects_in_all_title p {
+        font-size: 15px;
+    }
+
+    .years_experience_num {
+        font-size: 50px;
+    }
+
+    .years_experience_num,
+    .cool_designers_num,
+    .projects_in_all_num {
+        margin-top: 12px;
+    }
+
+
+}
+
+@media screen and (max-width: 1580px) {
+    .projects_in_main {
+        max-width: 1400px !important;
+        width: 100%;
+    }
+
+    .projects_in_all_num {
+        padding-right: 70px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .projects_in_main {
+        flex-wrap: wrap;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .projects_in_main {
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .projects_in_main {
+        flex-direction: column;
+        margin-left: -70px;
+        align-self: center;
+    }
+
+    .years_experience_num,
+    .cool_designers_num,
+    .projects_in_all_num {
+        display: block;
+    }
+}

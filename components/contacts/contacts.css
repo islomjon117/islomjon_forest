@@ -1,0 +1,229 @@
+.contacts {
+    background-image: url('../../assets/contact_bg/contact_bg.png');
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacts_main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacts_right {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.contacts_left_title,
+.contacts_right_title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 47.41px;
+    letter-spacing: 3%;
+    color: var(--nav_hover);
+    border-left: 3px solid;
+    margin-left: 205px;
+    padding-left: 20px;
+    padding-top: 5px;
+    height: 90px;
+}
+
+.contacts_right_subtitle p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.34px;
+    letter-spacing: 6%;
+    color: var(--nav_color);
+    margin-left: 230px;
+}
+
+.contacts_right_inputs input {
+    display: block;
+    margin-top: 50px;
+    margin-left: 230px;
+    width: 354px;
+    height: 50px;
+    border: 1px solid var(--nav_color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background-color: transparent;
+    text-transform: capitalize;
+    color: var(--nav_color);
+    font-size: 18px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    height: 20px;
+    background: transparent;
+    border: none;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 1px solid #000;
+}
+
+.checkbox p {
+    color: var(--nav_color);
+    margin-top: 50px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 18.44px;
+    letter-spacing: 1.1px;
+    font-weight: 300;
+}
+
+.contacts_left_title {
+    margin-top: -67px;
+}
+
+.contact_icon_left,
+.ofis_email,
+.ofis_phone_num,
+.ofis_info {
+    color: var(--nav_color);
+    padding-left: 230px;
+}
+
+.ofis_info_title {
+    font-size: 20px;
+    line-height: 26.34px;
+    font-weight: 300;
+}
+
+.working_time,
+.ofis_location {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 27.66px;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.ofis_phone_num {
+    padding-top: 80px;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 27.66px;
+    letter-spacing: 1px;
+}
+
+.ofis_email {
+    margin-top: 80px;
+}
+
+.ofis_email p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26.34px;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.contact_icon_left {
+    margin-top: 40px;
+    margin-left: -15px;
+}
+
+.contact_icon_left a {
+    padding-left: 15px;
+    font-size: 31px;
+    color: var(--nav_color);
+}
+
+.submit_btn {
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 230px;
+    width: 350px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--nav_color);
+    background-color: transparent;
+    border: 1px solid var(--nav_hover);
+}
+
+@media screen and (max-width: 768px) {
+    .contacts_main {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -30px;
+    }
+
+    .contacts_right {
+        position: relative;
+        left: -435px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .contacts_left {
+        margin: 0;
+        padding: 0;
+        top: 100px;
+        position: relative;
+        left: -580px;
+        padding-bottom: 50px;
+    }
+
+    .contacts_right_inputs input {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .contacts_right_title {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+
+    .contacts_right_subtitle {
+        width: 550px;
+    }
+
+    .checkbox {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        margin-left: -20px;
+    }
+
+    .submit_btn {
+        position: relative;
+        right: 8px;
+        max-width: 300px;
+    }
+
+    .checkbox {
+        display: flex;
+        justify-content: center;
+    }
+
+    .checkbox p {
+        font-size: 12px;
+    }
+
+    .checkbox input {
+        margin-top: 50px;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contacts_main{
+        flex-direction: column;
+    }
+}
